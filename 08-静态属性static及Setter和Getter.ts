@@ -32,8 +32,16 @@ console.log(person.name); // 打印fefuns 注意这里getName后面是没有括�
 person.name = 'fefuns haha'; //
 console.log(person.name);
 /**
- * getter 和 setter的作用就是保护类里面的私有属性
+ * getter 和 setter的作用就是保护类里面的私有属性。其实，这里设置readonly 也可以达到同样的目的。只不过getter和setter可以更高级，因为他们可以对name“加密”，返回的并不一定是别人原始输入的name
  */
+// class Person1 {
+//   public readonly name: string;
+//   constructor(name: string) {
+//     this.name = name;
+//   }
+// }
+// const person1 = new Person1('fefuns');
+// person1.name = 'hezhi'; // 这时候如果想该fefuns 改成 hezhi ，也是会报错的。因为name虽然是一个public类型，但它是只读，不可被修改
 
 // 3.假定有以下代码
 // class Demo {

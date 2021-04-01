@@ -21,4 +21,5 @@ new Home.Page1();
  * 但是 Home中的Page引用了 Components的Header、Content、Footer方法，并不能直观的体现出 page.ts 和components.ts之间的关联。
  * 当需要表现 Home命名空间依赖于 Components命名空间的时候，就需要在上面写上命名空间的依赖声明
  * ///<reference path='./components.ts'/>
+ * 但是这种命名空间依赖声明的方式，并不如import语法
  */

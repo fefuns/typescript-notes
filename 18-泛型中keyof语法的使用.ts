@@ -34,4 +34,4 @@ const teacher = new Teacher({
   gender: 'male',
 });
 const test = teacher.getInfo('name');
-// 此时编辑器移到test上面，编辑器就会根据传入的name还是age，而返回不同的类型，比如age:number,name:string。。而且现在再传入接口中不存在属性的话，编辑器就可以识别出错误了。
+// 此时鼠标移到test上面，编辑器就会根据传入的name还是age，而返回不同的类型，比如age:number,name:string。。而且现在再传入接口中不存在属性的话，编辑器就可以识别出错误了。

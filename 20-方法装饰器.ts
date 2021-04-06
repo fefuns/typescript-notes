@@ -29,7 +29,7 @@ class Test1 {
     return this.name;
   }
 }
-const test4 = new Test('fefuns');
+const test4 = new Test1('fefuns');
 test4.getName = () => {
   return '123';
 };

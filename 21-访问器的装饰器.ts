@@ -1,9 +1,4 @@
 /**
- * 普通方法：
- * target对应的是类的prototype Test1 {getName: [Function]} 'getName'
- * key对应的是被装饰的方法的名字  getName
- * 静态方法：
- * target 对应的是类的构造函数 {[Function: Test] getName: {[Function]}} 'getName'
  * @param target
  * @param key
  */
@@ -28,6 +23,6 @@ class Test3 {
     this._name = name;
   }
 }
-const test31 = new Test('fefuns');
+const test31 = new Test3('fefuns');
 test31.name = '123';
 console.log(test31.name); // => 打印 '123'
